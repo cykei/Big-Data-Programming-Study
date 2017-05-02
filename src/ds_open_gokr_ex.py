@@ -25,7 +25,7 @@ def doIt():
     url=urlparse.urljoin(_url,params)
     # (5) get data
     data=requests.get(url).text
-    print data[:300]
-
+    print data
+    
 if __name__ == "__main__":
     doIt()
